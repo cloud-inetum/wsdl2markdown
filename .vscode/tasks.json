@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Gerar Documentação Markdown do WSDL",
+      "type": "shell",
+      "command": "python",
+      "args": [
+        "${workspaceFolder}/wsdl2md.py",
+        "${file}",
+        "${fileDirname}/${fileBasenameNoExtension}.md"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
